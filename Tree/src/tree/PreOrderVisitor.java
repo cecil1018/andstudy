@@ -5,7 +5,7 @@ public class PreOrderVisitor<Type extends Comparable<Type>> implements
 		Visitor<Type> {
 
 	@Override
-	public void visit(BinaryNode<Type> dest) {
+	public void visit(BNode<Type> dest) {
 		System.out.println(dest.getValue());
 		if(dest.hasLeftChild()) {
 			dest.getLeftChild().accept(this);

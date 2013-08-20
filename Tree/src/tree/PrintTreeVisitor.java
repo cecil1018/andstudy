@@ -9,7 +9,7 @@ public class PrintTreeVisitor<Type extends Comparable<Type>> implements
 	}
 	
 	@Override
-	public void visit(BinaryNode<Type> dest) {
+	public void visit(BNode<Type> dest) {
 		
 		for(int i = 0; i < depth; i++) {
 			System.out.print("\t");

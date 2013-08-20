@@ -4,7 +4,7 @@ public class InOrderVisitor<Type extends Comparable<Type>> implements
 		Visitor<Type> {
 
 	@Override
-	public void visit(BinaryNode<Type> dest) {
+	public void visit(BNode<Type> dest) {
 
 		if(dest.hasLeftChild()) {
 			dest.getLeftChild().accept(this);
